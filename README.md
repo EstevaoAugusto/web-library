@@ -2,7 +2,7 @@
 O repositório contêm o resultado do projeto final da disciplina Engenharia de Software na Universidade Federal de Lavras, onde aplicamos diversos de seus conceitos, métodos, e técnicas. O projeto final é um sistema WEB que possuí Autenticação/Autorização, e CRUD de 1 e 3 tabelas.
 
 # O que é Web-Library
-Sistema WEB de uma biblioteca, onde usuários comuns poderão realizar empréstimos online de livros, visualizar conteudo de ebooks, pesquisar obras desejadas, entre outros. Ademais, alguns do usuários cadastrados serão capazes de administrar o conteúdo da biblioteca, nisso inclui, quais livros estão disponíveis no formato digital, estoque de cópias, inserção de novas obras, entre outros.
+Sistema WEB de uma biblioteca, onde usuários cadastrados como leitores poderão realizar empréstimos online de livros e pesquisar obras desejadas. Ademais, administradores serão responsáveis pelo conteúdo da biblioteca, isto é, inserir, editar e excluir livros.
 
 # Tecnologias Utilizadas
 
