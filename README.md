@@ -7,7 +7,7 @@ Sistema WEB de uma biblioteca, onde usuários cadastrados como leitores poderão
 # Tecnologias Utilizadas
 
 - IDE: Visual Studio Code v1.95
-- API Client: Imsomina v10.2.0
+- API Client: Insomnia v10.2.0
 - Front-End: React v18
   - Nisso inclui HTML5, CSS3 e Javascript(ECMAScript 2024)
 - Servidor de Desenvolvimento: Create-React-App (CRA) v5.0.1
@@ -16,14 +16,20 @@ Sistema WEB de uma biblioteca, onde usuários cadastrados como leitores poderão
 
 # Requisitos
 
+[Visual Studio Code](https://code.visualstudio.com/)
+
 [Node Package Manager](https://nodejs.org/pt)
 
 [PostgreSQL](https://www.postgresql.org/)
 
 # Instalação
 
-* Clonar o repositório: `git clone git@github.com:EstevaoAugusto/web-library.git`
-* [Baixar o release mais recente do sistema]()
+Para instalar o sistema WEB, pode-se clonar o repositório:
+```git
+git clone git@github.com:EstevaoAugusto/web-library.git
+```
+
+Ou, [baixar o release mais recente do sistema.]()
 
 # Estrutura do diretório do projeto
 
