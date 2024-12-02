@@ -17,6 +17,8 @@ O documento contêm informações de como os requisitos da **Web Library** devem
   * RNF001 - O usuário pode realizar o empréstimo de no máximo 5 exemplares.
   * RNF002 - O usuário não deve realizar empréstimo de exemplares de livros que não tenha devolvido.
 
+Observações: Ao descrever um requisito funcional ou não-funcional, é preciso usar a nomenclatura RF ou RNF de acordo com os exemplos e conceitos apresentados.
+
 ## Especificação de Requisitos
 
 ### Defina somente um requisito por vez
