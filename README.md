@@ -6,7 +6,11 @@ Sistema WEB de uma biblioteca, onde usuários cadastrados como leitores poderão
 
 # Tecnologias Utilizadas
 
-- Front-End: React v18 
+- IDE: Visual Studio Code v1.95
+- API Client: Imsomina v10.2.0
+- Front-End: React v18
+  - Nisso inclui HTML5, CSS3 e Javascript(ECMAScript 2024)
+- Servidor de Desenvolvimento: Create-React-App (CRA) v5.0.1
 - Back-End: Express v4.21.1
 - Banco de Dados: PostgreSQL v17.0
 
@@ -18,9 +22,12 @@ Sistema WEB de uma biblioteca, onde usuários cadastrados como leitores poderão
 
 # Instalação
 
-```git
-git clone git@github.com:EstevaoAugusto/web-library.git
-```
+* Clonar o repositório: `git clone git@github.com:EstevaoAugusto/web-library.git`
+* [Baixar o release mais recente do sistema]()
+
+# Estrutura do diretório do projeto
+
+
 
 # Integrantes
 
