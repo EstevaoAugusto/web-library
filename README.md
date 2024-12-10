@@ -10,7 +10,7 @@ Sistema WEB de uma biblioteca, onde usuários cadastrados como leitores poderão
 - API Client: Insomnia v10.2.0
 - Front-End: React v18
   - Nisso inclui HTML5, CSS3 e Javascript(ECMAScript 2024)
-- Servidor de Desenvolvimento: Create-React-App (CRA) v5.0.1
+- Servidor de Desenvolvimento: Vite v6.0.3
 - Back-End: Express v4.21.1
 - Banco de Dados: PostgreSQL v17.0
 
@@ -27,6 +27,10 @@ Sistema WEB de uma biblioteca, onde usuários cadastrados como leitores poderão
 Para instalar o sistema WEB, pode-se clonar o repositório:
 ```git
 git clone git@github.com:EstevaoAugusto/web-library.git
+```
+Em seguida, ir a pasta "web-library"
+```git
+cd web-library
 ```
 
 Ou, [baixar o release mais recente do sistema.]()
