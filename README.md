@@ -6,7 +6,7 @@ O repositório contêm o resultado do projeto final da disciplina Engenharia de 
 2. [Tecnologias Utilizadas](#tecnologias-utilizadas)
 3. [Instalação](#instalação)
 4. [Estrutura do diretório do projeto](#estrutura-do-diretório-do-projeto)
-5. [Regras de Uso](#uso)
+5. [Regras de Uso](#regras-de-uso)
 6. [Integrantes](#integrantes)
 
 ## O que é Web-Library
