@@ -92,11 +92,57 @@ O commit contém os seguintes elementos estruturais, para comunicar a intenção
 - feat: um commit do tipo feat inclui um novo recurso na sua base de código.
 - BREAKING CHANGE: um commit que contém no rodapé opcional o texto BREAKING CHANGE:, ou contém o símbolo ! depois do tipo/escopo, introduz uma modificação que quebra a compatibilidade da API. Uma BREAKING CHANGE pode fazer parte de commits de qualquer tipo.
 
-O Conventional Commits tambem permite que tipos adicionais sejam adicionados, o próprio website cita @commitlint/config-conventional (baseado na Convenção do Angular) com os tipos build, chore, ci, docs, style, refactor, entre outros. Seguindo essa recomendação, qualquer commit deve ter um tipo que esteja em algumas das duas conveções.
+Os títulos do commit devem ter no máximo 65 caracteres de tamanho e oferecer uma visão clara do que foi feito. Os verbos utilizados devem estar no indicativo, como nos exemplos abaixo:
+
+
+```
+docs: adicionar regras de uso no README.md
+
+Desenvolvedores podem saber quais convenções de commits e branchs são usadas.
+```
+
+```
+feat!: envia email para o cliente quando o produto é enviado
+```
+
+Descrições podem ser maiores que o título, desde que acrescentem com contexto e ofereçam uma visão geral. Um exemplo de descrição se encontra abaixo:
+
+O Conventional Commits tambem permite que tipos adicionais sejam adicionados, o próprio website cita [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint) com os tipos build, chore, ci, docs, style, refactor, entre outros. Seguindo essa recomendação, qualquer commit deve ter um tipo que esteja em algumas das duas conveções. 
+
+O significado desses tipos se encontra abaixo:
+
+- build: Relacionado a mudanças que afetam o sistema de build ou dependências externas (ex.: configurações do Maven, Gradle, npm).
+- chore: Mudanças que não alteram a lógica de produção ou testes (ex.: atualizações de dependências, ajustes em configurações).
+- ci: Alterações nos arquivos e scripts de integração contínua (ex.: configurações do GitHub Actions, Jenkins).
+- docs: Atualizações na documentação (ex.: README, comentários no código).
+- perf: Melhorias de desempenho (ex.: otimizações de código).
+- refactor: Mudanças no código que não corrigem bugs nem adicionam funcionalidades (ex.: renomeação de variáveis, reestruturação de métodos).
+- revert: Reversão de um commit anterior.
+- style: Alterações que afetam a formatação do código, mas não a lógica (ex.: espaçamento, identação, remoção de espaços em branco).
+- test: Adição ou modificação de testes (ex.: criação de casos de teste, ajustes em testes unitários).
 
 ### Branches
 
-### Versões
+Ao criar uma branch, ela deve seguir as seguintes regras:
+
+- Fazer uso de títulos com letras minúsculas e separados por traço, por exemplo: feature/new-login, bugfix/database-connection, entre outros.
+- Usar caracteres alfanúmericos (a-z, A-Z, 0-9) e evitar pontuação, espaço, e outros caracteres não-alfanúmericos.
+- Sem uso contínuo de traços, por exemplo: feature--new-login. Para evitar confusão.
+- Não deixar que títulos terminem com traços, como bugfix/database-connection-
+- Ter titulos descritivos e concisos que refletem o trabalho feito na branch.
+
+Além dessas, para facilitar a identificação de uma branch e seu propósito, elas sempre devem possuir um prefixo, esses sendo:
+
+- Branch de Feature: Branches usadas para o desenvolvimento de novas features. Possuem o prefixo "feat/", como "feature/login-system".
+- Branch de Bugfix: Branches usadas para a correção de bugs no código. Possuem o prefixo "bugfix/", como "bugfix/header-styling".
+- Branch de Hotfix: Branches originadas diretamente da branch de produção para consertar falhas críticas. Possuem o prefixo "hotfix/", como "hotfix/critical-security-issue".
+- Branch de Release: Branches usadas para preparar o proximo release do sistema. Possuem o prefixo "release/".
+- Branch de Documentation: Branches usadas para escrever, modificar ou consertar documentação, utiliza-se o prefixo "docs/".
+
+Por padrão, devem existir duas branchs:
+
+- main: Branch principal do sistema.
+- develop: Branch de desenvolvimento do sistema.
 
 ## Integrantes
 
