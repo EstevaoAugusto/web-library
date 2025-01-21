@@ -1,0 +1,29 @@
+.containerFlex {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 5px;
+    align-content: center;
+    inline-size: max-content;
+    block-size: max-content;
+    width: 100%;
+    max-width: 40%;
+    height: auto;
+    gap: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.containerFlex input {
+    padding: 5px;
+}
+
+.containerFlexSecao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}

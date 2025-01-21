@@ -1,11 +1,16 @@
-import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useEffect, useState } from 'react';
+import { Routes, Route } from "react-router";
+import TelaCadastro from './views/TelaCadastro.jsx';
+import TelaLogin from './views/TelaLogin.jsx';
+import TelaPerfilLeitor from './views/TelaPerfilLeitor.jsx';
+import TelaRecuperarConta from './views/TelaRecuperarConta.jsx';
+import TelaAdministrador from './views/TelaAdministrador.jsx';
+import TelaAcervo from './views/TelaAcervo.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
 
+  /*
   useEffect(() => {
     const fetchAPI = async () => {
       try{
@@ -24,31 +29,17 @@ function App() {
 
     fetchAPI()
   }, [])
+  */
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-      
-    </>
+    <Routes>
+      <Route path="/" element={<TelaCadastro />}/>
+      <Route path="/TelaAdministrador" element={<TelaAdministrador />}/>
+      <Route path="/TelaAcervo" element={<TelaAcervo />}/>
+      <Route path="/TelaLogin" element={<TelaLogin />}/>
+      <Route path="/TelaPerfilLeitor" element={<TelaPerfilLeitor />}/>
+      <Route path="/TelaRecuperarConta" element={<TelaRecuperarConta />}/>
+    </Routes>
   )
 }
 
