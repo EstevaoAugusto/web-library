@@ -14,19 +14,19 @@ const TelaCadastro = () => {
     <section className={styles.containerFlexSecao}>
         <img style={estiloLivro} src={PilhaLivros} alt="Pilha de livros" />
         <form className={styles.containerFlex}>
-            <label for="fnome">Nome</label> 
+            <label htmlFor="fnome">Nome</label> 
             <input type="text" id="fnome" name="fnome" /> 
 
-            <label for="femail">Email</label> 
+            <label htmlFor="femail">Email</label> 
             <input type="text" id="femail" name="femail" />  
 
-            <label for="fsenha">Senha</label>
+            <label htmlFor="fsenha">Senha</label>
             <input type="password" id="fsenha" name="fsenha"/>
 
-            <label for="fendereco">Endereço (Opcional)</label> 
+            <label htmlFor="fendereco">Endereço (Opcional)</label> 
             <input type="text" id="fendereco" name="fendereco" /> 
 
-            <label for="ftelefone">Telefone (Opcional)</label>
+            <label htmlFor="ftelefone">Telefone (Opcional)</label>
             <input type="text" id="ftelefone" name="ftelefone" />
 
             <input type="submit" value="Cadastrar" onClick={() => navegar("/TelaAcervo")}/>

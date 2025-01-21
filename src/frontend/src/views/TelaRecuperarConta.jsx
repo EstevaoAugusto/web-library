@@ -14,10 +14,10 @@ const TelaRecuperarConta = () => {
             <section className={styles.containerFlexSecao}>
                 <form className={styles.containerFlex}>
                     <h1>Digite o seu email e nova senha:</h1>
-                    <label for="femail">Email</label> 
+                    <label htmlFor="femail">Email</label> 
                     <input type="text" id="femail" name="femail" />  
     
-                    <label for="fsenha">Senha</label>
+                    <label htmlFor="fsenha">Senha</label>
                     <input type="password" id="fsenha" name="fsenha"/>
         
                     <input type="submit" value="Recuperar Senha" onClick={() => navegar("/TelaAcervo")}/>
