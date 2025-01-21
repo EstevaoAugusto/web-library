@@ -40,38 +40,17 @@ Ou, [baixar o release mais recente do sistema.]()
 ## Estrutura do diretório do projeto
 
 ```
-web-library/
-├── backend/                # Diretório para o projeto Express
-│   ├── node_modules/       # Módulos do Node.js para o backend
-│   ├── src/                # Código-fonte do backend
-│   │   ├── routes/         # Arquivos de rotas
-│   │   ├── controllers/    # Lógica de controle
-│   │   ├── models/         # Modelos de dados (caso use um banco de dados)
-│   │   ├── middleware/     # Middlewares personalizados
-│   │   └── server.js       # Arquivo principal do servidor
-│   ├── .env                # Variáveis de ambiente para o backend
-│   ├── package.json        # Dependências e scripts do backend
-│   └── package-lock.json   # Versões exatas das dependências
-│
-├── frontend/               # Diretório para o projeto React
-│   ├── node_modules/       # Módulos do Node.js para o frontend
-│   ├── public/             # Arquivos públicos do React
-│   ├── src/                # Código-fonte do frontend
-│   │   ├── components/     # Componentes reutilizáveis
-│   │   ├── pages/          # Páginas principais da aplicação
-│   │   ├── services/       # Comunicação com o backend (API)
-│   │   └── App.js          # Componente principal
-│   ├── .env                # Variáveis de ambiente para o frontend
-│   ├── package.json        # Dependências e scripts do frontend
-│   └── package-lock.json   # Versões exatas das dependências
-│
-├── README.md               # Documentação do projeto
-├── .gitignore              # Arquivos e pastas a serem ignorados no Git
-├── Padrões Adotados/
-├──  └── Regras de Verificação e Analise de Requisitos.md # Arquivo que define como os requisitos devem ser definidos
-└── requisitos/
-     ├── Documento de Requisitos - Web Library.pdf        # Pdf que descreve os requisitos do projeto
-     └── web-library-visoes.asta                          # Diagrama das visões dos usuários que utilizaram o sistema (Leitor e Administrador)
+web_library/
+├── src/
+│   ├── backend/
+│   └── frontend/
+├── docs/
+│   ├── requirements/
+│   ├── guidelines/
+│   └── diagrams/
+├── test/
+├── README.md
+└── .gitignore
 ```
 
 ## Regras de Uso
