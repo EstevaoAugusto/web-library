@@ -1,0 +1,9 @@
+.navBarVert {
+    background-color: #679A5C;
+    height: 100vh;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
