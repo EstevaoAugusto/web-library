@@ -6,6 +6,7 @@ import TelaPerfilLeitor from './views/TelaPerfilLeitor.jsx';
 import TelaRecuperarConta from './views/TelaRecuperarConta.jsx';
 import TelaAdministrador from './views/TelaAdministrador.jsx';
 import TelaAcervo from './views/TelaAcervo.jsx';
+import TelaPerfilAdmin from './views/TelaPerfilAdmin.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -39,6 +40,7 @@ function App() {
       <Route path="/TelaLogin" element={<TelaLogin />}/>
       <Route path="/TelaPerfilLeitor" element={<TelaPerfilLeitor />}/>
       <Route path="/TelaRecuperarConta" element={<TelaRecuperarConta />}/>
+      <Route path="/TelaPerfilAdmin" element={<TelaPerfilAdmin />}/>
     </Routes>
   )
 }
