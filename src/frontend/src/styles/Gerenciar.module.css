@@ -1,0 +1,15 @@
+.flexContainerDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.flexContainerSection {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 5px solid white;
+    margin: 1rem;
+}

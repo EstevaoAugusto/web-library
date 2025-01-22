@@ -7,6 +7,10 @@ import TelaRecuperarConta from './views/TelaRecuperarConta.jsx';
 import TelaAdministrador from './views/TelaAdministrador.jsx';
 import TelaAcervo from './views/TelaAcervo.jsx';
 import TelaPerfilAdmin from './views/TelaPerfilAdmin.jsx';
+import TelaGerenciarAdministradores from './views/TelaGerenciarAdministradores.jsx';
+import TelaGerenciarEmprestimos from './views/TelaGerenciarEmprestimos.jsx';
+import TelaGerenciarLivros from './views/TelaGerenciarLivros.jsx';
+import TelaGerenciarExemplares from './views/TelaGerenciarExemplares.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -39,8 +43,12 @@ function App() {
       <Route path="/TelaAcervo" element={<TelaAcervo />}/>
       <Route path="/TelaLogin" element={<TelaLogin />}/>
       <Route path="/TelaPerfilLeitor" element={<TelaPerfilLeitor />}/>
+      <Route path='/TelaPerfilAdmin' element={<TelaPerfilAdmin/>}/>
       <Route path="/TelaRecuperarConta" element={<TelaRecuperarConta />}/>
-      <Route path="/TelaPerfilAdmin" element={<TelaPerfilAdmin />}/>
+      <Route path="/TelaGerenciarAdministradores" element={<TelaGerenciarAdministradores />}/>
+      <Route path="/TelaGerenciarEmprestimos" element={<TelaGerenciarEmprestimos />}/>
+      <Route path="/TelaGerenciarExemplares" element={<TelaGerenciarExemplares />}/>
+      <Route path="/TelaGerenciarLivros" element={<TelaGerenciarLivros />}/>
     </Routes>
   )
 }

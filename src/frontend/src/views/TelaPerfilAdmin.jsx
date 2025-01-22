@@ -30,7 +30,7 @@ const TelaPerfilAdmin = () => {
             <section className={styles.gridContainer}>
                 <aside className={styles.navBarVert}>
                     <div style={estiloBotoes}>
-                        <input type="submit" value="Voltar" onClick={() => navegar("/TelaAcervo")}/>
+                        <input type="submit" value="Voltar" onClick={() => navegar("/TelaAdministrador")}/>
                         <input type="submit" value="Logout" onClick={() => navegar("/")}/>
                     </div>
                 </aside>

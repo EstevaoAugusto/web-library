@@ -33,10 +33,10 @@ const TelaAdministrador = () => {
             <div className={styles.containerFlex}>
                 
                 <Stack spacing={3} direction="row">
-                    <Button sx={estiloBotoes} variant="contained">Gerenciar Exemplares</Button>
-                    <Button sx={estiloBotoes} variant="contained">Gerenciar Administradores</Button>
-                    <Button sx={estiloBotoes} variant="contained">Gerenciar Livros</Button>
-                    <Button sx={estiloBotoes} variant="contained">Gerenciar Emprestimos</Button>
+                    <Button sx={estiloBotoes} variant="contained" onClick={() => navegar("/TelaGerenciarExemplares")}>Gerenciar Exemplares</Button>
+                    <Button sx={estiloBotoes} variant="contained" onClick={() => navegar("/TelaGerenciarAdministradores")}>Gerenciar Administradores</Button>
+                    <Button sx={estiloBotoes} variant="contained" onClick={() => navegar("/TelaGerenciarLivros")}>Gerenciar Livros</Button>
+                    <Button sx={estiloBotoes} variant="contained" onClick={() => navegar("/TelaGerenciarEmprestimos")}>Gerenciar Emprestimos</Button>
                 </Stack>
             </div>
             </section>
