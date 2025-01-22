@@ -12,3 +12,14 @@
 .header > input {
     width: 80%;
 }
+
+.headerAdmin {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #997C70;
+    border: 5px solid #997C70;
+    gap: 1rem;
+    margin: 0;
+    padding: 1rem;
+}

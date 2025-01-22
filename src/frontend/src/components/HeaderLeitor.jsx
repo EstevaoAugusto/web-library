@@ -4,7 +4,7 @@ import styles from "../styles/Header.module.css"
 import { useNavigate } from "react-router"
 
 
-const Header = () => {
+const HeaderLeitor = () => {
     const navegar = useNavigate()
     
     return (
@@ -18,4 +18,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default HeaderLeitor
