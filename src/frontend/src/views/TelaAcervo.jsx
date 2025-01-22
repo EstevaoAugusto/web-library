@@ -1,4 +1,4 @@
-import Header from "../components/Header.jsx"
+import Header from "../components/HeaderLeitor.jsx"
 import styles from "../styles/Acervo.module.css"
 
 const TelaAcervo = () => {

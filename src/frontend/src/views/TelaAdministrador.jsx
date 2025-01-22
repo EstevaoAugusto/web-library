@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router"
-import Header from "../components/Header.jsx"
+import Header from "../components/HeaderAdmin.jsx"
 import styles from "../styles/Administrador.module.css"
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
@@ -7,17 +7,38 @@ import Stack from '@mui/material/Stack';
 const TelaAdministrador = () => {
     const navegar = useNavigate()
 
+    const estiloBotoes = {
+        width: '100%',
+        height: '100%',
+
+    };
+
+    const estiloElemento = {
+        backgroundColor: '#459EFF',
+        color: 'white',
+        display: 'flex',
+        flexDirection: 'column'
+    };
+
+    const flexContainerNumeros = {
+        display: 'flex',
+        flexDirection: 'row',
+    };
+
     return (
         <>
             <Header/>
             <section>
 
-            <Stack spacing={2} direction="row">
-                <Button variant="contained">Gerenciar Exemplares</Button>
-                <Button variant="contained">Gerenciar Administradores</Button>
-                <Button variant="contained">Gerenciar Livros</Button>
-                <Button variant="contained">Gerenciar Emprestimos</Button>
-            </Stack>
+            <div className={styles.containerFlex}>
+                
+                <Stack spacing={3} direction="row">
+                    <Button sx={estiloBotoes} variant="contained">Gerenciar Exemplares</Button>
+                    <Button sx={estiloBotoes} variant="contained">Gerenciar Administradores</Button>
+                    <Button sx={estiloBotoes} variant="contained">Gerenciar Livros</Button>
+                    <Button sx={estiloBotoes} variant="contained">Gerenciar Emprestimos</Button>
+                </Stack>
+            </div>
             </section>
         </>
     )
