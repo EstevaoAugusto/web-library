@@ -1,8 +1,8 @@
 import { pool } from '../sql/bd.js';  // Supondo que você esteja usando um pool de conexão
 
-export const createAdmin = async (email, passwordHash) => {
-  const query = 'INSERT INTO admins (email, password) VALUES ($1, $2) RETURNING *';
-  const values = [email, passwordHash];
+export const createAdmin = async (email, nome, passwordHash) => {
+  const query = 'INSERT INTO admins (email, nome, senha) VALUES ($1, $2, $3) RETURNING *';
+  const values = [email, nome, passwordHash];
   const result = await pool.query(query, values);
   return result.rows[0];
 };
