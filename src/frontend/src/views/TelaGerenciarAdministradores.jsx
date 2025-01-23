@@ -1,5 +1,3 @@
-import DeleteIcon from '@mui/icons-material/Delete'
-import SearchIcon from '@mui/icons-material/Search'
 import IconButton from '@mui/material/IconButton'
 import styles from "../styles/Gerenciar.module.css"
 import ArrowBackIcon from '@mui/icons-material/ArrowBack'
@@ -26,36 +24,27 @@ const TelaGerenciarAdministradores = () => {
             <section className={styles.flexContainerSection}>                
                 <div className={styles.flexContainerDiv}>
                     <span>Peter Pascuau</span>
+                    <span>Email@email.com</span>
 
-                    <div>
-                        <IconButton>
-                            <SearchIcon/>
-                        </IconButton>
-                    </div>
+                    
                 </div>
 
                 <div className={styles.flexContainerDiv}>
                     <span>Peter Pascuau</span>
+                    <span>Email@email.com</span>
 
-                    <div>
-                        <IconButton>
-                            <SearchIcon/>
-                        </IconButton>
-                    </div>
+                  
                 </div>
 
                 <div className={styles.flexContainerDiv}>
                     <span>Peter Pascuau</span>
+                    <span>Email@email.com</span>
 
-                    <div>
-                        <IconButton>
-                            <SearchIcon/>
-                        </IconButton>
-                    </div>
+                    
                 </div>
 
                 <div>
-                    <button>Adicionar Administradores</button>
+                    <button onClick={() => navegar("/TelaFormsAdministrador")}>Adicionar Administradores</button>
                 </div>
             </section>
         </>

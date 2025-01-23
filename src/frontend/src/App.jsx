@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Routes, Route } from "react-router";
+import TelaFormsLivros from './views/TelaFormsLivros.jsx';
+import TelaFormsAdministradores from './views/TelaFormsAdministradores.jsx';
 import TelaCadastro from './views/TelaCadastro.jsx';
 import TelaLogin from './views/TelaLogin.jsx';
 import TelaPerfilLeitor from './views/TelaPerfilLeitor.jsx';
@@ -11,6 +13,8 @@ import TelaGerenciarAdministradores from './views/TelaGerenciarAdministradores.j
 import TelaGerenciarEmprestimos from './views/TelaGerenciarEmprestimos.jsx';
 import TelaGerenciarLivros from './views/TelaGerenciarLivros.jsx';
 import TelaGerenciarExemplares from './views/TelaGerenciarExemplares.jsx';
+import TelaFormsLivrosEditar from './views/TelaFormsLivrosEditar.jsx';
+import TelaLivrosVisualizar from './views/TelaLivrosVisualizar.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -39,16 +43,20 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<TelaCadastro />}/>
-      <Route path="/TelaAdministrador" element={<TelaAdministrador />}/>
-      <Route path="/TelaAcervo" element={<TelaAcervo />}/>
       <Route path="/TelaLogin" element={<TelaLogin />}/>
-      <Route path="/TelaPerfilLeitor" element={<TelaPerfilLeitor />}/>
-      <Route path='/TelaPerfilAdmin' element={<TelaPerfilAdmin/>}/>
       <Route path="/TelaRecuperarConta" element={<TelaRecuperarConta />}/>
+      <Route path="/TelaAcervo" element={<TelaAcervo />}/>
+      <Route path="/TelaPerfilLeitor" element={<TelaPerfilLeitor />}/>
+      <Route path="/TelaAdministrador" element={<TelaAdministrador />}/>
+      <Route path='/TelaPerfilAdmin' element={<TelaPerfilAdmin/>}/>
       <Route path="/TelaGerenciarAdministradores" element={<TelaGerenciarAdministradores />}/>
+      <Route path="/TelaFormsAdministrador" element={<TelaFormsAdministradores />}/>
       <Route path="/TelaGerenciarEmprestimos" element={<TelaGerenciarEmprestimos />}/>
       <Route path="/TelaGerenciarExemplares" element={<TelaGerenciarExemplares />}/>
       <Route path="/TelaGerenciarLivros" element={<TelaGerenciarLivros />}/>
+      <Route path="/TelaFormsLivros" element={<TelaFormsLivros />}/>
+      <Route path="/TelaFormsLivrosEditar" element={<TelaFormsLivrosEditar />}/>
+      <Route path="/TelaLivrosVisualizar" element={<TelaLivrosVisualizar />}/>
     </Routes>
   )
 }

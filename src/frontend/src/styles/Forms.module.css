@@ -1,0 +1,9 @@
+.containerFlex{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 5px solid white;
+    margin: 1rem;
+    gap: 1rem;
+    padding: 1rem;
+}

@@ -34,11 +34,11 @@ const TelaGerenciarLivros = () => {
                             <DeleteIcon/>
                         </IconButton>
 
-                        <IconButton>
+                        <IconButton onClick={() => navegar("/TelaLivrosVisualizar")}>
                             <SearchIcon/>
                         </IconButton>
 
-                        <IconButton>
+                        <IconButton onClick={() => navegar("/TelaFormsLivrosEditar")}>
                             <EditIcon/>
                         </IconButton>
                     </div>
@@ -99,7 +99,7 @@ const TelaGerenciarLivros = () => {
                 </div>
 
                 <div>
-                    <button>Cadastrar Livro</button>
+                    <button onClick={() => { navegar("/TelaFormsLivros")}}>Cadastrar Livro</button>
                 </div>
             </section>
         </>
