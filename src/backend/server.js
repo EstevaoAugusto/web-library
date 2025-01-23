@@ -6,6 +6,7 @@ import cookieParser from 'cookie-parser';
 import authAdminRoutes from './routes/authAdminRoutes.js';
 import authLeitorRoutes from './routes/authLeitorRoutes.js';
 import livroRoutes from './routes/livroRoutes.js';
+import perfilRoutes from './routes/perfilRoutes.js';
 
 // Configurando o ambiente
 dotenv.config();
@@ -22,6 +23,7 @@ app.use(cookieParser()); // Para manipular cookies nas requisições
 app.use('/auth/admin', authAdminRoutes);
 app.use('/auth/leitor', authLeitorRoutes);
 app.use('/livros', livroRoutes);
+app.use('/perfil', perfilRoutes)
 
 app.post('/logout', (req, res) => {
   res.clearCookie('token', {

@@ -8,6 +8,6 @@ const router = express.Router();
 router.post('/login', loginAdminController);
 
 // Rota para registro do administrador
-router.post('/register', authMiddleware, isAdminMiddleware, registerAdminController);
+router.post('/register', registerAdminController);
 
 export default router;
