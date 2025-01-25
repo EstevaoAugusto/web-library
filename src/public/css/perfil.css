@@ -1,0 +1,81 @@
+/* Define um estilo global para garantir que o corpo da página ocupe toda a altura */
+body {
+    font-family: Arial, sans-serif; /* Fonte básica */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* 100% da altura da janela */
+    background-color: #f4f4f9; /* Cor de fundo suave */
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo na horizontal */
+    align-items: center; /* Centraliza o conteúdo na vertical */
+}
+
+/* Estilo para o contêiner de login */
+.container {
+    background-color: white; /* Fundo branco para o formulário */
+    padding: 30px; /* Espaço interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 100%;
+    max-width: 400px; /* Largura máxima para evitar que fique muito largo */
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+    display: block;
+}
+
+/* Título do formulário */
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333; /* Cor do texto */
+}
+
+/* Estilo para os campos de input */
+.input-field {
+    height: 40px;
+    width: 100%; /* Largura total do contêiner */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 15px; /* Espaço entre os campos */
+    border: 1px solid #ccc; /* Cor da borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    box-sizing: border-box; /* Inclui o padding na largura total */
+    text-align: left;
+}
+
+/* Estilo para o botão */
+button {
+    width: 100%; /* Largura total */
+    padding: 12px; /* Espaçamento interno */
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    font-size: 16px; /* Tamanho da fonte */
+    border: none; /* Remove borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s; /* Efeito de transição suave na cor de fundo */
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+
+#error-message {
+    display: block;
+    color: red;
+    font-weight: bold;
+    margin: 10px 0; /* Adiciona um pequeno espaçamento */
+    font-size: 14px;
+    text-align: left;
+    display: none; /* Inicialmente invisível */
+}
+
+#success-message {
+    display: block;
+    color: green;
+    font-weight: bold;
+    margin: 10px 0; /* Adiciona um pequeno espaçamento */
+    font-size: 14px;
+    text-align: left;
+    display: none; /* Inicialmente invisível */
+}

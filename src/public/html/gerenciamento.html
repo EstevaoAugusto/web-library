@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento</title>
+    <link rel="stylesheet" href="css/gerenciamento.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Gerenciamento</h1>
+        <div id="search">
+            <input type="text" id="searchBar" placeholder="Pesquisar..." />
+            <button onclick="searchData()">Pesquisar</button>
+            <a href="/meuperfil">
+                <button>Ver perfil</button>
+            </a>
+              
+        </div>
+
+        <!-- New Entry Form (fields to the left of the button) -->
+        <div id="newEntryForm">
+            <input type="text" id="newIsbn" placeholder="ISBN" maxlength="13" pattern="\d{13}" title="Insira um ISBN válido"/>
+            <input type="text" id="newNome" placeholder="Nome" maxlength="100" />
+            <input type="text" id="newAutor" placeholder="Autor" maxlength="100" />
+            <input type="text" id="newGenero" placeholder="Gênero" maxlength="20" />
+            <button id="addButton" onclick="addData()">Adicionar</button>
+        </div>
+
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>ISBN</th>
+                    <th>Nome</th>
+                    <th>Autor</th>
+                    <th>Gênero</th>
+                    <th>Ação</th> <!-- New column for actions -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be inserted here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/gerenciamento.js"></script>
+</body>
+</html>
