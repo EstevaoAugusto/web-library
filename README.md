@@ -1,5 +1,5 @@
 # Contexto do projeto
-O repositório contêm o resultado do projeto final da disciplina Engenharia de Software na Universidade Federal de Lavras, onde aplicamos diversos de seus conceitos, métodos, e técnicas. O projeto final é um sistema WEB que possuí Autenticação/Autorização, e CRUD de 1 e 3 tabelas.
+O repositório contêm o resultado do projeto final da disciplina Engenharia de Software na Universidade Federal de Lavras, onde aplicamos diversos de seus conceitos, métodos, e técnicas. O projeto final é um sistema WEB que possui Autenticação/Autorização, e CRUD de 1 e 3 tabelas.
 
 ## Índice
 1. [O que é Web-Library](#o-que-é-web-library)
@@ -10,23 +10,20 @@ O repositório contêm o resultado do projeto final da disciplina Engenharia de 
 6. [Integrantes](#integrantes)
 
 ## O que é Web-Library
-Sistema WEB para gerenciamento de uma biblioteca, projetado para oferecer funcionalidades tanto para leitores quanto para administradores. Usuários cadastrados como leitores poderão explorar um acervo digital, realizar pesquisas de obras por título, além de solicitar empréstimos online de livros. O sistema também permitirá que os leitores acompanhem o status de seus empréstimos, visualizem prazos de devolução e as informações do livro. Já os administradores terão controle total sobre a gestão do conteúdo da biblioteca, incluindo a inserção de novos livros ao catálogo, edição de informações existentes, como descrições, autores ou número de exemplares disponíveis, e a exclusão de obras que não estejam mais disponíveis. Adicionalmente, os administradores poderão monitorar a movimentação dos empréstimos e manter o acervo atualizado.
+Sistema WEB para gerenciamento de uma biblioteca, projetado para oferecer funcionalidades tanto para leitores quanto para administradores. Usuários cadastrados como leitores poderão explorar um acervo digital, realizar pesquisas de obras por título, além de solicitar empréstimos online de livros. O sistema também permitirá que os leitores acompanhem o status de seus empréstimos, visualizem prazos de devolução e as informações do livro. Já os administradores terão controle total sobre a gestão do conteúdo da biblioteca, incluindo a inserção edição, remoção e pesquisa de livros. É possível alterar a senha cadastrada para fazer login.
 
 ## Tecnologias Utilizadas
 
 - IDE: [Visual Studio Code v1.95](https://code.visualstudio.com/)
-- API Client: [Insomnia v10.2.0](https://insomnia.rest/download)
 - HTML5, CSS3 e Javascript(ECMAScript 2024)
-- Front-End: [React v18](https://pt-br.react.dev/)
-- Servidor de Desenvolvimento: [Vite v6.0.3](https://vite.dev/)
 - Back-End: [Express v4.21.1](https://expressjs.com/)
 - Banco de Dados: [PostgreSQL v17.0](https://www.postgresql.org/)
 - Ambiente de Execução: [Node.js v22.11.0](https://nodejs.org/pt)
 - Gerenciador de Pacotes: [Node Package Manager (npm)](https://www.npmjs.com/)
 
-## Instalação
+## Como utilizar
 
-Para instalar o sistema WEB, pode-se clonar o repositório:
+Para utilizar o sistema WEB, pode-se clonar o repositório:
 ```git
 git clone git@github.com:EstevaoAugusto/web-library.git
 ```
@@ -37,13 +34,46 @@ cd web-library
 
 Ou, [baixar o release mais recente do sistema.]()
 
+Depois de baixar o sistema, na pasta "web-library" use os comandos a seguir para instalar dependências
+```git
+cd src
+npm install
+```
+A seguir, inicie o servidor
+```git
+node server.js
+```
+
+Após isso, pode-se acessar o sistema pelo navegador no endereço http://localhost:5000.
+
+É necessário criar um arquivo .env na pasta src com um segredo para que a autenticação funcione
+```git
+echo "JWT_SECRET_KEY=segredo" > .env
+```
+
+Enquanto o servidor está rodando e após criar o arquivo .env, pode-se simular um administrador já cadastrado no sistema usando o comando
+```git
+node teste.js
+```
+
+O script acima gerará um admin com o email "joao@exemplo.com" e a senha "senha".
+
 ## Estrutura do diretório do projeto
 
 ```
 web_library/
 ├── src/
-│   ├── backend/
-│   └── frontend/
+│   ├── controllers/
+│   ├── middlewares/
+│   ├── public/
+│   ├── repositories/
+│   ├── routes/
+│   ├── services/
+│   ├── sql/
+│   ├── package-lock.json/
+│   ├── package.json/
+│   ├── server.js/
+│   └── teste.js/
 ├── docs/
 │   ├── requirements/
 │   ├── guidelines/
@@ -127,4 +157,4 @@ Por padrão, devem existir duas branchs:
 
 - Estevão Augusto da Fonseca Santos
 - Felipe Geraldo de Oliveira
-- Eduardo Cesar Cauduro de Coelho
+- Eduardo Cesar Cauduro Coelho
