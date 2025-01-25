@@ -46,10 +46,17 @@ node server.js
 
 Após isso, pode-se acessar o sistema pelo navegador no endereço http://localhost:5000.
 
-Enquanto o servidor está rodando, pode-se simular um administrador já cadastrado no sistema usando o comando
+É necessário criar um arquivo .env na pasta src com um segredo para que a autenticação funcione
+```git
+echo "JWT_SECRET_KEY=segredo" > .env
+```
+
+Enquanto o servidor está rodando e após criar o arquivo .env, pode-se simular um administrador já cadastrado no sistema usando o comando
 ```git
 node teste.js
 ```
+
+O script acima gerará um admin com o email "joao@exemplo.com" e a senha "senha".
 
 ## Estrutura do diretório do projeto
 
