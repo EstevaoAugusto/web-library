@@ -58,6 +58,9 @@ node teste.js
 
 O script acima gerará um admin com o email "joao@exemplo.com" e a senha "senha".
 
+O sistema assume que a base de dados chama-se "web-library" com o usuário "postgres", a senha "senha", o host "localhost" e a porta "5432".
+O código para a criação das tabelas está no arquivo src/db.sql.
+
 ## Estrutura do diretório do projeto
 
 ```
