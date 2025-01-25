@@ -34,20 +34,21 @@ cd web-library
 
 Ou, [baixar o release mais recente do sistema.]()
 
-Depois de baixar o sistema, na pasta "web-library" use o comando a seguir para instalar dependências
+Depois de baixar o sistema, na pasta "web-library" use os comandos a seguir para instalar dependências
 ```git
+cd src
 npm install
 ```
 A seguir, inicie o servidor
 ```git
-node src/server.js
+node server.js
 ```
 
 Após isso, pode-se acessar o sistema pelo navegador no endereço http://localhost:5000.
 
 Enquanto o servidor está rodando, pode-se simular um administrador já cadastrado no sistema usando o comando
 ```git
-node src/teste.js
+node teste.js
 ```
 
 ## Estrutura do diretório do projeto
