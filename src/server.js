@@ -7,8 +7,9 @@ import perfilRoutes from './routes/perfilRoutes.js'
 import { authMiddleware } from './middlewares/authMiddleware.js';
 import cors from 'cors';
 import path from 'path';
+import { fileURLToPath } from 'url';
 
-const __dirname = path.dirname(new URL(import.meta.url).pathname);
+const __dirname = path.dirname(fileURLToPath(import.meta.url)); // Ajuste aqui para garantir o caminho correto
 
 // Configurando o ambiente
 dotenv.config();
